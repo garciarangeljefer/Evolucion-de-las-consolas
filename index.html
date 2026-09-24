@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evolución de las Consolas de Videojuegos</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- ZONA A: CABECERA -->
+  <header class="cabecera">
+    <h1 id="titulo">Evolución de las Consolas</h1>
+    <p id="subtitulo">Resumen por generaciones y hitos clave en la historia</p>
+    <nav class="menu">
+      <a href="#inicio" class="enlace">Inicio</a>
+      <a href="#coleccion" class="enlace">Consolas</a>
+      <a href="#contacto" class="enlace">Contacto</a>
+    </nav>
+    <button id="btnTema" class="boton-tema">Modo oscuro</button>
+  </header>
+
+  <main>
+    <!-- ZONA B: PRESENTACIÓN -->
+    <section id="inicio" class="bloque">
+      <h2>Bienvenido</h2>
+      <p id="parrafoInicio">La historia de las consolas de videojuegos es fascinante y ha evolucionado desde los años 70 hasta convertirse en la industria del entretenimiento más grande del mundo.</p>
+      
+      <div id="caja" class="zona-pruebas">
+        <p>Esta es la zona de pruebas interactiva. Los botones de abajo la modifican.</p>
+      </div>
+      
+      <div class="grupo-botones">
+        <button id="btnColor" class="boton">Cambiar color</button>
+        <button id="btnDestacar" class="boton">Destacar</button>
+        <button id="btnOcultar" class="boton">Ocultar</button>
+      </div>
+      
+      <p><a id="enlaceExterno" href="#">Enlace a recurso externo</a></p>
+    </section>
+
+    <!-- ZONA C: COLECCIÓN -->
+    <section id="coleccion" class="bloque">
+      <h2>Generaciones de Consolas</h2>
+      <p id="contador"></p>
+      
+      <ul id="lista">
+        <li>Generación 1 (1970s)</li>
+        <li>Generación 2 (1980s)</li>
+        <li>Generación 3 (1990s)</li>
+      </ul>
+      
+      <div class="campo-grupo">
+        <input type="text" id="campoProyecto" placeholder="Agregar nueva generación">
+        <button id="btnAgregar" class="boton">Agregar</button>
+      </div>
+      
+      <div class="grupo-botones">
+        <button id="btnQuitar" class="boton">Quitar el último</button>
+        <button id="btnVaciar" class="boton">Vaciar</button>
+      </div>
+      
+      <table id="tabla">
+        <thead>
+          <tr>
+            <th>Generación</th>
+            <th>Año</th>
+            <th>Características</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Gen 1</td>
+            <td>1970s</td>
+            <td>Hardware simple</td>
+            <td>200$</td>
+          </tr>
+          <tr>
+            <td>Gen 2</td>
+            <td>1980s</td>
+            <td>Cartuchos regrabables</td>
+            <td>250$</td>
+          </tr>
+          <tr>
+            <td>Gen 3</td>
+            <td>1990s</td>
+            <td>Mayor potencia gráfica</td>
+            <td>300$</td>
+          </tr> <tr>
+   <td>Gen 4</td>
+   <td>2000s</td>
+   <td>Mayor rendimiento</td>
+   <td>400$</td>
+ </tr>
+          
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ZONA D: FORMULARIO -->
+    <section id="contacto" class="bloque">
+      <h2>Dejanos tu comentario</h2>
+      <form id="formulario">
+        <div class="campo-grupo">
+          <label for="campoNombre">Nombre:</label>
+          <input type="text" id="campoNombre">
+        </div>
+        
+        <div class="campo-grupo">
+          <label for="campoMensaje">Mensaje:</label>
+          <textarea id="campoMensaje"></textarea>
+          <p id="contadorLetras">0 caracteres</p>
+        </div>
+        
+        <button type="submit" id="btnEnviar" class="boton">Enviar</button>
+        <p id="avisoForm"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- ZONA E: PIE -->
+  <footer class="pie">
+    <p>Consolas de Videojuegos — Ficha 3230489 — <span id="anio"></span></p>
+  </footer>
+</body>
+</html>
