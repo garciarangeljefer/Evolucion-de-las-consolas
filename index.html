@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayMarket — Tienda de Consolas</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="cabecera">
+    <h1 id="titulo">PlayMarket</h1>
+    <p id="subtitulo">Tu tienda de consolas y videojuegos — Generaciones y novedades</p>
+    <nav class="menu">
+      <a href="#inicio" class="enlace">Inicio</a>
+      <a href="#coleccion" class="enlace">Consolas</a>
+      <a href="#galeria" class="enlace">Galeria</a>
+      <a href="#contacto" class="enlace">Contacto</a>
+    </nav>
+    <button id="btnTema" class="boton-tema">Modo oscuro</button>
+  </header>
+
+  <main>
+    <section id="inicio" class="bloque">
+      <h2>Bienvenido a PlayMarket</h2>
+      <p>La historia de las consolas ha evolucionado desde los años 70 hasta convertirse en una de las industrias mas grandes del mundo. Descubre con nosotros cada generacion.</p>
+
+      <div class="imagen-destacada">
+        <img src="data:image/jpeg;base64,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" alt="Consolas clasicas y modernas" loading="lazy">
+      </div>
+
+      <div id="caja" class="zona-pruebas">
+        <p>Zona de pruebas interactiva</p>
+      </div>
+
+      <div class="grupo-botones">
+        <button id="btnColor" class="boton">Cambiar color</button>
+        <button id="btnDestacar" class="boton">Destacar</button>
+        <button id="btnOcultar" class="boton">Ocultar</button>
+      </div>
+
+      <p><a id="enlaceExterno" href="#">Enlace a recurso externo</a></p>
+    </section>
+
+    <section id="coleccion" class="bloque">
+      <h2>Generaciones de Consolas</h2>
+      <p id="contador"></p>
+
+      <ul id="lista">
+        <li>Generacion 1 (1970s) — Magnavox Odyssey</li>
+        <li>Generacion 2 (1980s) — Atari 2600</li>
+        <li>Generacion 3 (1990s) — NES y Master System</li>
+      </ul>
+
+      <div class="campo-grupo">
+        <input type="text" id="campoProyecto" placeholder="Agregar nueva generacion">
+        <button id="btnAgregar" class="boton">Agregar</button>
+      </div>
+
+      <div class="grupo-botones">
+        <button id="btnQuitar" class="boton">Quitar el ultimo</button>
+        <button id="btnVaciar" class="boton">Vaciar</button>
+      </div>
+
+      <table id="tabla">
+        <thead>
+          <tr>
+            <th>Generacion</th>
+            <th>Año</th>
+            <th>Caracteristicas</th>
+            <th>Precio aprox.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Gen 1</td>
+            <td>1972-1977</td>
+            <td>Primeras consolas, sin cartuchos</td>
+            <td>$100-$200</td>
+          </tr>
+          <tr>
+            <td>Gen 2</td>
+            <td>1977-1983</td>
+            <td>Cartuchos, graficos simples</td>
+            <td>$150-$250</td>
+          </tr>
+          <tr>
+            <td>Gen 3</td>
+            <td>1983-1995</td>
+            <td>8 bits, sprites, sonido mejorado</td>
+            <td>$199-$300</td>
+          </tr>
+          <tr>
+            <td>Gen 4</td>
+            <td>1987-1999</td>
+            <td>16 bits, CD, audio estereo</td>
+            <td>$250-$400</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="galeria" class="bloque">
+      <h2>Galeria de Consolas</h2>
+      <div class="galeria-imagenes">
+        <div class="tarjeta-imagen">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2XdNu6IgUeM31yrmfwjl3Uy8-xHX4jWpNyDg62w_-sA&s=10" alt="Nintendo" loading="lazy">
+          <p>Nintendo — Innovacion desde siempre</p>
+        </div>
+        <div class="tarjeta-imagen">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYZWpVugjVtTcGQ7FvXlkdflRURqp5EQV6Tp58sMoVPg&s=10" alt="PlayStation" loading="lazy">
+          <p>PlayStation — La revolucion de Sony</p>
+        </div>
+        <div class="tarjeta-imagen">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFhe50hQawksaCSJzbDpd_eR4oighGB8s1pi0xfTNIsQ&s=10" alt="Xbox" loading="lazy">
+          <p>Xbox — Potencia y tecnologia</p>
+        </div>
+        <div class="tarjeta-imagen">
+          <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=300&h=200&fit=crop" alt="Retro Gaming" loading="lazy">
+          <p>Retro — Clasicos que nunca mueren</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="bloque">
+      <h2>Dejanos tu comentario</h2>
+      <form id="formulario">
+        <div class="campo-grupo">
+          <label for="campoNombre">Nombre:</label>
+          <input type="text" id="campoNombre">
+        </div>
+
+        <div class="campo-grupo">
+          <label for="campoMensaje">Mensaje:</label>
+          <textarea id="campoMensaje"></textarea>
+          <p id="contadorLetras">0 caracteres</p>
+        </div>
+
+        <button type="submit" id="btnEnviar" class="boton">Enviar</button>
+        <p id="avisoForm"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>PlayMarket — Tienda de Consolas de Videojuegos — Ficha 3230489 — <span id="anio"></span></p>
+  </footer>
+</body>
+</html>
